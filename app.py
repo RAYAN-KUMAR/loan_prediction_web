@@ -5,8 +5,8 @@ import os
 
 
 BASE_DIR = os.path.dirname(__file__)
-model_path = os.path.join(BASE_DIR, "model.pkl")
-scaler_path = os.path.join(BASE_DIR, "scaler.pkl")
+model_path = os.path.join(BASE_DIR,"load_Prediction_Web", "model.pkl")
+scaler_path = os.path.join(BASE_DIR,"load_Prediction_Web", "scaler.pkl")
 
 model = pk.load(open(model_path, "rb"))
 scaler = pk.load(open(scaler_path, "rb"))
